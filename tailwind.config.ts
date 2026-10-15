@@ -98,6 +98,15 @@ export default {
       transitionTimingFunction: {
         apple: 'cubic-bezier(0.42, 0, 0.58, 1)',
       },
+      keyframes: {
+        'marquee-right': {
+          '0%': { transform: 'translateX(-50%)' },
+          '100%': { transform: 'translateX(0%)' },
+        },
+      },
+      animation: {
+        'marquee-right': 'marquee-right 60s linear infinite',
+      },
     },
   },
   plugins: [animatePlugin, typographyPlugin, aspectRatioPlugin],
